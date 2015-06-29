@@ -5,7 +5,15 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>DummyJUnitTests</name>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+      <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
